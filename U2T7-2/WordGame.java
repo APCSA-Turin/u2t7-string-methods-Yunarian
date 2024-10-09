@@ -43,6 +43,12 @@ public class WordGame {
                 score += 3;
             }
 
+            // Checking if the words are of the same length
+            if (typedWord.length() == initialWord.length()) {
+                System.out.println(" +3 points");
+                score += 3;
+            }
+
             // things which should always run after each loop
             initialWord = typedWord;
             words++;
